@@ -1,6 +1,11 @@
+<script>
+	const about_link = './about/+page.svelte';
+</script>
+
 <h1 class="text-3xl font-bold text-center">Colton Jones</h1>
 <p>Software | Smash | Fitness | Rackets</p>
-<div class="text-center"><button class="text-center">About Me</button></div>
+<a href="/about"><div class="text-center"><button class="text-center">About Me</button></div></a>
+
 
 <style>
 	:global(html) {
@@ -8,7 +13,7 @@
 		color: #f1f1f1;
 		display: flex;
 		justify-content: center;
-		margin-top: 45%;
+		margin-top: 45vh;
 	}
 
 	button {

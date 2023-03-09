@@ -1,7 +1,11 @@
+<script>
+  import PageLayout from "../../components/page-layout.svelte";
+</script>
 
 <h1>About Me</h1>
 <section>
-	<p></p>
+	<p>Sup brother</p>
+	<PageLayout>child element</PageLayout>
 </section>
 
 <style>
@@ -10,6 +14,6 @@
 		color: #f1f1f1;
 		display: flex;
 		justify-content: center;
-		margin-top: 45%;
+		padding-top: 4vh;
 	}
 </style>
