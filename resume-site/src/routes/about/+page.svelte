@@ -2,18 +2,29 @@
   import PageLayout from "../../components/page-layout.svelte";
 </script>
 
-<h1>About Me</h1>
 <section>
-	<p>Sup brother</p>
-	<PageLayout>child element</PageLayout>
+	<PageLayout>
+		<div class="flex-template">
+			<div class="left-side">content</div>
+			<div class="right-side">other content</div>
+		</div>
+	</PageLayout>
 </section>
 
 <style>
-	:global(html) {
-		background-color: #2b2736;
-		color: #f1f1f1;
-		display: flex;
-		justify-content: center;
-		padding-top: 4vh;
+	.flex-template{
+		display: grid;
+		grid-template-columns: 33% auto;
+		position: relative;
+	}
+	.left-side{
+		flex-grow: 2;
+		background-color: brown;
+		padding: 100%;
+	}
+	.right-side{
+		flex-grow: 4;
+		background-color: green;
+		padding: 100%;
 	}
 </style>
